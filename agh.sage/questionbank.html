@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank - Sage University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo12sage.png" height="90px" alt="">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="questionbank.html" class="active">Question Bank</a>
+            <a href="placement.html">Placements</a>
+            <a href="#contact">Contact us</a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="question-bank-header allheader">
+        <div class="header-content">
+            <h1>Question Bank</h1>
+            <p>Access Previous Year Papers, Assignments & Study Materials</p>
+        </div>
+    </div>
+
+    <main class="question-bank-container">
+        <div class="option-selector">
+            <div class="selector-group">
+                <label for="branchSelect">Select Branch:</label>
+                <select id="branchSelect" onchange="updateContent()">
+                    <option value="">Choose Branch</option>
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="ece">Electronics & Communication</option>
+                </select>
+            </div>
+            <div class="selector-group">
+                <label for="semesterSelect">Select Semester:</label>
+                <select id="semesterSelect" onchange="updateContent()">
+                    <option value="">Choose Semester</option>
+                    <option value="sem1">Semester 1</option>
+                    <option value="sem2">Semester 2</option>
+                    <option value="sem3">Semester 3</option>
+                    <option value="sem4">Semester 4</option>
+                    <option value="sem5">Semester 5</option>
+                    <option value="sem6">Semester 6</option>
+                    <option value="sem7">Semester 7</option>
+                    <option value="sem8">Semester 8</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="resourceContent" class="resource-content">
+            <div class="filter-options">
+                <button class="filter-btn active" onclick="filterResources('all')">All Resources</button>
+                <button class="filter-btn" onclick="filterResources('papers')">Question Papers</button>
+                <button class="filter-btn" onclick="filterResources('assignments')">Assignments</button>
+                <button class="filter-btn" onclick="filterResources('notes')">Notes</button>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-section" data-type="papers">
+                    <h3><i class="fas fa-file-alt"></i> End Semester Papers</h3>
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="resource-info">
+                                <h4>2024 End Semester</h4>
+                                <p>Engineering Mathematics-I</p>
+                                <span class="meta">PDF • 2.5 MB</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadResource('math_2024')">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-section" data-type="papers">
+                    <h3><i class="fas fa-clock"></i> Mid Semester Papers</h3>
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <div class="resource-info">
+                                <h4>2024 Mid Semester</h4>
+                                <p>Engineering Physics</p>
+                                <span class="meta">PDF • 1.8 MB</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadResource('physics_2024')">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-section" data-type="assignments">
+                    <h3><i class="fas fa-tasks"></i> Assignments</h3>
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-file-word"></i>
+                            </div>
+                            <div class="resource-info">
+                                <h4>Assignment 1</h4>
+                                <p>Basic Electrical Engineering</p>
+                                <span class="meta">DOC • 500 KB</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadResource('electrical_assign1')">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-section" data-type="notes">
+                    <h3><i class="fas fa-book"></i> Teacher Notes</h3>
+                    <div class="resource-cards">
+                        <div class="resource-card">
+                            <div class="resource-icon">
+                                <i class="fas fa-file-powerpoint"></i>
+                            </div>
+                            <div class="resource-info">
+                                <h4>Chapter 1 Notes</h4>
+                                <p>Programming Fundamentals</p>
+                                <span class="meta">PPT • 1.2 MB</span>
+                            </div>
+                            <button class="download-btn" onclick="downloadResource('prog_notes_ch1')">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/the_engineering_2404" target="_blank">@the_engineering_2404</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919838279026">+91 9838279026</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:abhinavbhurtiya043@gmail.com">abhinavbhurtiya043@gmail.com</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Sage University Bhopal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="questionbank.js"></script>
+</body>
+</html>

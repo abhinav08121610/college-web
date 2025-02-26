@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Sage University Bhopal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo12sage.png" height="90px" alt="">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">🏠 Home</a>
+            <a href="curriculum.html" class="active">📚 Curriculum</a>
+            <a href="questionbank.html">📝 Question Bank</a>
+            <a href="placement.html">💼 Placements</a>
+            <a href="#contact">📞 Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Curriculum Header -->
+    <header class="curriculum-header allheader">
+        <h1>B.Tech Computer Science Curriculum</h1>
+        <p>A Comprehensive Four-Year Program</p>
+    </header>
+
+    <!-- Year Selection -->
+    <div class="year-selector">
+        <button class="year-btn active" onclick="showYear(1)">First Year</button>
+        <button class="year-btn" onclick="showYear(2)">Second Year</button>
+        <button class="year-btn" onclick="showYear(3)">Third Year</button>
+        <button class="year-btn" onclick="showYear(4)">Fourth Year</button>
+    </div>
+
+    <!-- Year Content -->
+    <div class="year-content-wrapper">
+        <!-- First Year -->
+        <div class="year-content active" id="year1">
+            <div class="semester">
+                <h2>First Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">MA101</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Engineering Mathematics-I</h3>
+                        <ul class="topics">
+                            <li>Differential Calculus</li>
+                            <li>Integral Calculus</li>
+                            <li>Matrices</li>
+                            <li>Differential Equations</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">PH101</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Engineering Physics</h3>
+                        <ul class="topics">
+                            <li>Wave Mechanics</li>
+                            <li>Optics</li>
+                            <li>Quantum Physics</li>
+                            <li>Semiconductor Physics</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS101</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Programming in C</h3>
+                        <ul class="topics">
+                            <li>Basic Programming Concepts</li>
+                            <li>Arrays and Functions</li>
+                            <li>Pointers and Structures</li>
+                            <li>File Handling</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">EE101</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Basic Electrical Engineering</h3>
+                        <ul class="topics">
+                            <li>Circuit Analysis</li>
+                            <li>DC and AC Circuits</li>
+                            <li>Transformers</li>
+                            <li>Electrical Machines</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">ME101</span>
+                            <span class="credits">3 Credits</span>
+                        </div>
+                        <h3>Engineering Graphics</h3>
+                        <ul class="topics">
+                            <li>Orthographic Projections</li>
+                            <li>Isometric Views</li>
+                            <li>Machine Drawing</li>
+                            <li>AutoCAD Basics</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">HU101</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Professional Communication</h3>
+                        <ul class="topics">
+                            <li>Technical Writing</li>
+                            <li>Presentation Skills</li>
+                            <li>Business Communication</li>
+                            <li>Soft Skills</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS102</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Computer Workshop</h3>
+                        <ul class="topics">
+                            <li>Computer Hardware</li>
+                            <li>Operating Systems</li>
+                            <li>Office Tools</li>
+                            <li>Internet Technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Second Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS201</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Database Management</h3>
+                        <ul class="topics">
+                            <li>SQL Fundamentals</li>
+                            <li>Database Design</li>
+                            <li>Normalization</li>
+                            <li>Transaction Management</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS202</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Operating Systems</h3>
+                        <ul class="topics">
+                            <li>Process Management</li>
+                            <li>Memory Management</li>
+                            <li>File Systems</li>
+                            <li>System Security</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS203</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Computer Networks</h3>
+                        <ul class="topics">
+                            <li>Network Protocols</li>
+                            <li>TCP/IP Model</li>
+                            <li>Routing Algorithms</li>
+                            <li>Network Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Year -->
+        <div class="year-content" id="year2">
+            <div class="semester">
+                <h2>Third Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">MA301</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Mathematics-III</h3>
+                        <ul class="topics">
+                            <li>Probability & Statistics</li>
+                            <li>Complex Analysis</li>
+                            <li>Transform Calculus</li>
+                            <li>Numerical Methods</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS301</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Data Structures</h3>
+                        <ul class="topics">
+                            <li>Arrays & Linked Lists</li>
+                            <li>Stacks & Queues</li>
+                            <li>Trees & Graphs</li>
+                            <li>Searching & Sorting</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS302</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Object Oriented Programming</h3>
+                        <ul class="topics">
+                            <li>Classes & Objects</li>
+                            <li>Inheritance & Polymorphism</li>
+                            <li>Exception Handling</li>
+                            <li>Java Programming</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS303</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Digital Logic Design</h3>
+                        <ul class="topics">
+                            <li>Boolean Algebra</li>
+                            <li>Combinational Circuits</li>
+                            <li>Sequential Circuits</li>
+                            <li>Memory Systems</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS304</span>
+                            <span class="credits">3 Credits</span>
+                        </div>
+                        <h3>Computer Organization</h3>
+                        <ul class="topics">
+                            <li>CPU Architecture</li>
+                            <li>Memory Hierarchy</li>
+                            <li>I/O Organization</li>
+                            <li>Assembly Language</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS305</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Data Structures Lab</h3>
+                        <ul class="topics">
+                            <li>Implementation of ADTs</li>
+                            <li>Tree & Graph Algorithms</li>
+                            <li>Sorting Techniques</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Fourth Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS401</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Design & Analysis of Algorithms</h3>
+                        <ul class="topics">
+                            <li>Algorithm Analysis</li>
+                            <li>Divide & Conquer</li>
+                            <li>Dynamic Programming</li>
+                            <li>Graph Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS402</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Database Management Systems</h3>
+                        <ul class="topics">
+                            <li>ER Modeling</li>
+                            <li>SQL & Normalization</li>
+                            <li>Transaction Processing</li>
+                            <li>Concurrency Control</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS403</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Operating Systems</h3>
+                        <ul class="topics">
+                            <li>Process Management</li>
+                            <li>Memory Management</li>
+                            <li>File Systems</li>
+                            <li>Deadlock Handling</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS404</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Computer Networks</h3>
+                        <ul class="topics">
+                            <li>Network Layers</li>
+                            <li>TCP/IP Protocol</li>
+                            <li>Routing Algorithms</li>
+                            <li>Network Security</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS405</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>DBMS Lab</h3>
+                        <ul class="topics">
+                            <li>SQL Programming</li>
+                            <li>Database Design</li>
+                            <li>PL/SQL</li>
+                            <li>Mini Project</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS406</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Operating Systems Lab</h3>
+                        <ul class="topics">
+                            <li>Shell Programming</li>
+                            <li>Process Management</li>
+                            <li>Memory Management</li>
+                            <li>File Operations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Year -->
+        <div class="year-content" id="year3">
+            <div class="semester">
+                <h2>Fifth Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS501</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Software Engineering</h3>
+                        <ul class="topics">
+                            <li>SDLC Models</li>
+                            <li>Requirements Engineering</li>
+                            <li>Software Testing</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS502</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Theory of Computation</h3>
+                        <ul class="topics">
+                            <li>Automata Theory</li>
+                            <li>Regular Languages</li>
+                            <li>Context-Free Grammars</li>
+                            <li>Turing Machines</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS503</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Web Technologies</h3>
+                        <ul class="topics">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript & jQuery</li>
+                            <li>PHP & MySQL</li>
+                            <li>Web Security</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS504</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <ul class="topics">
+                            <li>Problem Solving Methods</li>
+                            <li>Knowledge Representation</li>
+                            <li>Machine Learning</li>
+                            <li>Expert Systems</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS505</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Web Technologies Lab</h3>
+                        <ul class="topics">
+                            <li>Frontend Development</li>
+                            <li>Backend Integration</li>
+                            <li>Database Connectivity</li>
+                            <li>Web Project</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS506</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Software Engineering Lab</h3>
+                        <ul class="topics">
+                            <li>Requirements Analysis</li>
+                            <li>Design Patterns</li>
+                            <li>Testing Tools</li>
+                            <li>Team Project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Sixth Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS601</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Compiler Design</h3>
+                        <ul class="topics">
+                            <li>Lexical Analysis</li>
+                            <li>Syntax Analysis</li>
+                            <li>Code Generation</li>
+                            <li>Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS602</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Data Mining</h3>
+                        <ul class="topics">
+                            <li>Data Preprocessing</li>
+                            <li>Classification</li>
+                            <li>Clustering</li>
+                            <li>Association Rules</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS603</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Computer Graphics</h3>
+                        <ul class="topics">
+                            <li>2D Graphics</li>
+                            <li>3D Transformations</li>
+                            <li>Rendering</li>
+                            <li>Animation</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS604</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Mobile Computing</h3>
+                        <ul class="topics">
+                            <li>Android Development</li>
+                            <li>iOS Development</li>
+                            <li>Mobile Networks</li>
+                            <li>App Security</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS605</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Mobile App Development Lab</h3>
+                        <ul class="topics">
+                            <li>UI Development</li>
+                            <li>API Integration</li>
+                            <li>Database Handling</li>
+                            <li>App Publishing</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS606</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Mini Project</h3>
+                        <ul class="topics">
+                            <li>Project Planning</li>
+                            <li>Implementation</li>
+                            <li>Documentation</li>
+                            <li>Presentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Year -->
+        <div class="year-content" id="year4">
+            <div class="semester">
+                <h2>Seventh Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS701</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Cloud Computing</h3>
+                        <ul class="topics">
+                            <li>Virtualization</li>
+                            <li>Cloud Services</li>
+                            <li>Cloud Security</li>
+                            <li>AWS & Azure</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS702</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Information Security</h3>
+                        <ul class="topics">
+                            <li>Cryptography</li>
+                            <li>Network Security</li>
+                            <li>Web Security</li>
+                            <li>Security Policies</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS703</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <ul class="topics">
+                            <li>Supervised Learning</li>
+                            <li>Unsupervised Learning</li>
+                            <li>Neural Networks</li>
+                            <li>Deep Learning</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS704</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Internet of Things</h3>
+                        <ul class="topics">
+                            <li>IoT Architecture</li>
+                            <li>Sensor Networks</li>
+                            <li>IoT Protocols</li>
+                            <li>IoT Security</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS705</span>
+                            <span class="credits">2 Credits</span>
+                        </div>
+                        <h3>Machine Learning Lab</h3>
+                        <ul class="topics">
+                            <li>Python for ML</li>
+                            <li>TensorFlow</li>
+                            <li>Data Analysis</li>
+                            <li>ML Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="semester">
+                <h2>Eighth Semester</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card special">
+                        <div class="subject-header">
+                            <span class="code">CS801</span>
+                            <span class="credits">12 Credits</span>
+                        </div>
+                        <h3>Major Project</h3>
+                        <ul class="topics">
+                            <li>Project Development</li>
+                            <li>Research & Analysis</li>
+                            <li>Implementation</li>
+                            <li>Thesis & Defense</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card special">
+                        <div class="subject-header">
+                            <span class="code">CS802</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Industry Internship</h3>
+                        <ul class="topics">
+                            <li>Industry Training</li>
+                            <li>Project Work</li>
+                            <li>Performance Review</li>
+                            <li>Final Report</li>
+                        </ul>
+                    </div>
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <span class="code">CS803</span>
+                            <span class="credits">4 Credits</span>
+                        </div>
+                        <h3>Professional Elective</h3>
+                        <ul class="topics">
+                            <li>Blockchain Technology</li>
+                            <li>Data Science</li>
+                            <li>AR/VR</li>
+                            <li>Quantum Computing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <footer class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/the_engineering_2404" target="_blank">@the_engineering_2404</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919838279026">+91 9838279026</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:abhinavbhurtiya043@gmail.com">abhinavbhurtiya043@gmail.com</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Sage University Bhopal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage University Bhopal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo12sage.png" height="90px" alt="">
+        </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="nav-links">
+              
+            <a href="index.html" class="active">Home</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="questionbank.html">Question Bank</a>
+            <a href="placement.html">Placements</a>
+            <a href="#contact ">Contact us</a>
+            
+        </div>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <h1>Welcome to Sage University Bhopal</h1>
+        <p><u>Empowering Minds, Shaping Futures</u></p>
+        <button class="apply-now-btn" onclick="openApplyForm()">Apply Now</button>
+    </main>
+
+    <!-- Contact Section -->
+    <footer class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/the_engineering_2404" target="_blank">@the_engineering_2404</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+919838279026">+91 9838279026</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:abhinavbhurtiya043@gmail.com">abhinavbhurtiya043@gmail.com</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Sage University Bhopal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Apply Now Form Modal -->
+    <div class="modal" id="applyModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeApplyForm()">&times;</span>
+            <h2>Apply Now</h2>
+            <form id="applicationForm" onsubmit="submitApplicationForm(event)" action="ptpcess_application.php">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Desired Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a Course</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="bba">BBA</option>
+                        <option value="mba">MBA</option>
+                        <option value="bca">BCA</option>
+                        <option value="mca">MCA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Message</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+       <script src="script.js"></script>
+</body>
+</html>
